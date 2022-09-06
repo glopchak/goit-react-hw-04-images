@@ -16,6 +16,7 @@ export class App extends Component {
     modalImage: '',
   };
   totalPages = 0;
+  
   componentDidUpdate(_, prevState) {
     const { query, page } = this.state;
     if (prevState.query !== query || prevState.page !== page) {
